@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NavBar Tests</title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="menu">
+        <div id="menu-header">
+          <img src="leftIcon.svg" id="menu-left-arrow-icon" class="menu-mobile-icon float-left" />
+          <img src="menuIcon.svg" id="menu-icon" class="menu-mobile-icon" />
+          <img
+            src="menuCloseIcon.svg"
+            id="menu-close-icon"
+            class="menu-mobile-icon"
+          />
+        </div>
+        <div id="menu-body">
+        <ul id="menu-list">
+          <li class="menu-list-item">Gas</li>
+          <li class="menu-list-item">Power</li>
+          <li class="menu-list-item">Coal</li>
+          <li class="menu-list-item">Metals</li>
+        </ul>
+        </div>
+      </div>
+      <div id="dashboard">
+        <h1 id="dashboard-title">French Power</h1>
+        <nav id="dashboard-nav">
+          <ul>
+            <li>Summary</li>
+            <li>Generation</li>
+            <li>Load</li>
+          </ul>
+        </nav>
+        <div id="graph1" class="dashboard-item"></div>
+        <div id="graph2" class="dashboard-item"></div>
+        <div id="graph3" class="dashboard-item"></div>
+        <div id="graph4" class="dashboard-item"></div>
+        <div id="graph5" class="dashboard-item"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./plotly.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  height: 100%;
+  /* width:100%; */
+}
+
+#app {
+  text-align:center;
+}
+
+#app .menu-mobile-icon{
+  height:30px;
+  float:right;
+}
+
+#menu-close-icon {
+  display:none;
+}
+
+#app #menu-left-arrow-icon{
+  display:none;
+}
+
+#app.menu-expanded #menu {
+  height: 100%;  
+}
+
+#app.menu-expanded #menu-icon {
+  display: none;
+}
+
+#app.menu-expanded #menu-close-icon{
+  display:initial;
+}
+
+#app.menu-expanded #menu-left-arrow-icon{
+  display:initial;
+  float:left;
+}
+
+#app.menu-expanded #dashboard {
+  display: none;
+}
+
+#app.menu-expanded #menu-list{
+  display:initial;
+}
+
+#app.menu-expanded .menu-list-item
+{
+  opacity:1;
+}
+
+#menu {
+  background-color: black;
+  position: fixed;
+  color: white;
+  width: 100%;
+  z-index: 1;
+  height:60px;
+  transition:height 0.3s linear;
+
+}
+
+#menu-header{
+    padding:15px;       
+}
+
+#menu-body{
+  margin-top:30px;
+}
+
+#menu-list {
+  display: none; 
+  list-style-type: none; 
+  margin-top:50px;
+}
+
+.menu-list-item{
+  margin-left:20px;
+  margin-right:20px;
+  line-height:1.8em;
+  font-size:1.3em;
+  border-bottom:1px solid grey;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
+
+#dashboard-title 
+  {
+    line-height:3em;
+    font-weight:400;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  }
+
+ 
+
+@media only screen and (min-width: 600px) {
+  #menu {
+    height: 100%;
+    width:60px;   
+  }
+
+  #dashboard {
+    margin-left: 60px;
+  }
+
+   #app.menu-expanded #menu {
+    width:100px
+  }
+
+  
+  #app.menu-expanded #dashboard {
+
+  }
+}
+
